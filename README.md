@@ -19,3 +19,27 @@ Before running the IDS backend or capturing network traffic, you need to install
 
 > 💡 **Tip:** Npcap is compatible with most modern Windows 10/11 setups, provides better performance, and is actively updated.
 
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally.
+
+### Prerequisites
+- python (>= 3.12)
+- and install mongoDB compass local version
+pip
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/Amin-0513/ollama-ids-server.git
+
+# Navigate to project directory
+cd ollama-ids-server
+# create python environment
+python -m venv IDS
+# activate python environment
+IDS\Scripts\activate
+
+# Install dependencies
+pip install -r requirments.txt
+

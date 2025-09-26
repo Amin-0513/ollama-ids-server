@@ -19,6 +19,17 @@ Before running the IDS backend or capturing network traffic, you need to install
 
 > 💡 **Tip:** Npcap is compatible with most modern Windows 10/11 setups, provides better performance, and is actively updated.
 
+### 3. Set Up Neo4j Knowledge Graph
+
+1. Visit the official Neo4j website: [https://neo4j.com/](https://neo4j.com/)  
+2. Create a free account or use an existing account.  
+3. Download your database credentials (username, password, and connection URI).  
+4. Update the corresponding configuration in the project code with your Neo4j credentials.
+
+
+
+
+
 ## 🚀 Getting Started
 
 Follow these steps to set up the project locally.
@@ -35,11 +46,35 @@ git clone https://github.com/Amin-0513/ollama-ids-server.git
 
 # Navigate to project directory
 cd ollama-ids-server
+
 # create python environment
 python -m venv IDS
+
 # activate python environment
 IDS\Scripts\activate
 
 # Install dependencies
 pip install -r requirments.txt
+
+## Start project
+python threads.py
+
+#or run parallel these commands
+
+#1
+uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+#2
+python ml_ids.py
+#3
+python tranditionalapi.py
+#4
+python live_traffic.py
+
+
+
+
+
+
+
+
 

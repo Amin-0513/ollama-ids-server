@@ -1,4 +1,7 @@
 # ollama-IDS-Server
+
+![ollama-ids-server](/neo4j.PNG)
+
 This backend implements a comprehensive LLM-assisted Intrusion Detection System (IDS) designed to bridge machine learning, knowledge graphs, and natural language reporting for advanced cybersecurity analysis. The system begins by training on the NSL-KDD dataset to detect and classify malicious network activities into four primary categories: Remote-to-Local (R2L), User-to-Root (U2L), Probe, and Distributed Denial of Service (DDoS). Once attacks are identified, the pipeline maps each incident to potentially violated Common Vulnerabilities and Exposures (CVEs), creating a structured vulnerability dataset. These mappings are further enriched by constructing a Neo4j knowledge graph that captures relationships between attacks, services, and vulnerabilities. To improve detection accuracy, classification is performed using XGBoost, and reasoning over the knowledge graph is leveraged to infer the most likely CVEs linked to an attack. Finally, for reporting and analyst support, Ollama’s LLaMA-based LLM is integrated to automatically generate human-readable incident reports, translating raw technical classifications into clear narratives that highlight possible CVEs, their impact, and remediation insights. This workflow provides a scalable and intelligent backend framework for intrusion detection, vulnerability mapping, and automated cybersecurity reporting.
 
 ## Prerequisites: Install WinPcap or Npcap

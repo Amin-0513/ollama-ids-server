@@ -1,9 +1,9 @@
 from langchain_community.graphs import Neo4jGraph
 class knowledge_graph:
     def __init__(self):
-        self.NEO4j_URL="neo4j+s://affc2236.databases.neo4j.io"
+        self.NEO4j_URL=""
         self.NEO4j_USERNAME="neo4j"
-        self.NEO4j_PASSWORD="nCzi2z_tel-kiYqLrNS2tis7fc0ed5A_6L9ov0c3Y5U"
+        self.NEO4j_PASSWORD=""
         self.graph = Neo4jGraph(
             url= self.NEO4j_URL,
             username=self.NEO4j_USERNAME,

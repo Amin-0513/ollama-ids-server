@@ -9,9 +9,9 @@ from collections import deque, defaultdict
 # -------------------
 # Neo4j Setup
 # -------------------
-NEO4j_URL = "neo4j+s://0b0dcfc9.databases.neo4j.io"
+NEO4j_URL = ""
 NEO4j_USERNAME = "neo4j"
-NEO4j_PASSWORD = "w_EuMPCRLOOg6ZpDCV6NYkZQ1FEb5AHVmw5BXAryamE"
+NEO4j_PASSWORD = ""
 graph = Neo4jGraph(url=NEO4j_URL, username=NEO4j_USERNAME, password=NEO4j_PASSWORD)
 
 # -------------------

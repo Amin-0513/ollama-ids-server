@@ -40,7 +40,8 @@ Follow these steps to set up the project locally.
 ### Prerequisites
 - python (>= 3.12)
 - and install mongoDB compass local version
-pip
+- **Note:** First run all the notebook named as Neo4j.ipynb.
+- pip
 
 ### Installation
 ```bash
